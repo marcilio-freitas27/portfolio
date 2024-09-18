@@ -4,7 +4,6 @@ async function alterarTema(){
     let div = document.getElementsByTagName("div");
     let nav = document.getElementsByTagName("nav")[0];
     let body = document.getElementsByTagName("body")[0];
-    let span = document.getElementsByTagName("span");
     let homeTab = document.getElementById("home-tab");
     let profileTab = document.getElementById("profile-tab");
     let contactTab = document.getElementById("contact-tab");
