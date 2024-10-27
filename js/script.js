@@ -4,6 +4,7 @@ async function alterarTema(){
     let div = document.getElementsByTagName("div");
     let nav = document.getElementsByTagName("nav")[0];
     let body = document.getElementsByTagName("body")[0];
+    let footer = document.getElementsByTagName("footer")[0];
     let homeTab = document.getElementById("home-tab");
     let profileTab = document.getElementById("profile-tab");
     let contactTab = document.getElementById("contact-tab");
@@ -22,6 +23,9 @@ async function alterarTema(){
         nav.style.backgroundColor = "black";
         nav.style.color = "white";
         body.style.backgroundColor = "black";
+
+        footer.style.backgroundColor = "black";
+        footer.style.color = "white";
 
         homeTab.classList.add("bg-dark");
         homeTab.classList.add("text-light");
@@ -46,6 +50,9 @@ async function alterarTema(){
         nav.style.backgroundColor = "white";
         nav.style.color = "black";
         body.style.backgroundColor = "white";
+
+        footer.style.backgroundColor = "white";
+        footer.style.color = "black";
 
         homeTab.classList.remove("bg-dark");
         homeTab.classList.remove("text-light");

@@ -5,6 +5,10 @@
     height: auto;
 }
 
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 li{
     width: max-content;
 }
@@ -139,4 +143,10 @@ ul li::marker{
 
 nav{
     margin-bottom: 30px;
+}
+
+.app-container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
