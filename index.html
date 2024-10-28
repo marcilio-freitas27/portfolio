@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio oi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,19 +12,20 @@
 </head>
 
 <body class="app-container">
-    <nav class="border rounded p-3 text-center d-flex justify-content-between align-itens">
+    <header>
+        <nav class="border rounded p-3 text-center d-flex justify-content-between align-itens">
+            <img src="img/marcilio.jpg" 
+                    alt="perfil"
+                    class="image-size">
         
-        <img src="img/marcilio.jpg" 
-                alt="perfil"
-                class="image-size">
+            <strong>
+                <h2> Marcílio Freitas </h2>
+            </strong>
+            <button id="tema" class="btn btn-dark" type="button" onclick="alterarTema()">Dark</button>
+        </nav>
+    </header>
     
-        <b>
-            <h2> Marcílio Freitas </h2>
-        </b>
-        <button id="tema" class="btn btn-dark" type="button" onclick="alterarTema()">Dark</button>
-    </nav>
-    
-    <div>
+    <main>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Atividades</button>
@@ -35,10 +36,10 @@
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contato</button>
             </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="container border rounded p-5 div-margin estilo-div">
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <section class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <article class="container border rounded p-5 div-margin estilo-div">
                     <h3>
                         Atividades
                     </h3>
@@ -115,10 +116,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                <div class="container border rounded p-5 div-margin estilo-div">
+                </article>
+            </section>
+            <section class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <article class="container border rounded p-5 div-margin estilo-div">
                     <h3>
                         Projetos
                     </h3>
@@ -194,10 +195,10 @@
                         </div>
                     </div>
                     
-                </div>
-            </div>
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                <div class="container border rounded p-5 div-margin estilo-div">
+                </article>
+            </section>
+            <section class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <article class="container border rounded p-5 div-margin estilo-div">
                     <h3>
                         Contatos
                     </h3>
@@ -212,7 +213,7 @@
                                 </a>
                             </li>
                             <li>
-                               
+                                
                                 <a href="https://github.com/marcilio-freitas27" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Github">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 496 512">
                                         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -353,10 +354,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-          </div>
-    </div>
+                </article>
+            </section>
+        </div>
+    </main>
 
     <footer class="border rounded p-3 text-center d-flex justify-content-between align-itens">
         <strong>Portfílio - &copy; 2024</strong>
