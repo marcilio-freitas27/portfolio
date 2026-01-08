@@ -1,8 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
+* {
+  box-sizing: border-box;
 }
 
 body{
@@ -71,10 +68,6 @@ h3{
 
 a{
     text-decoration: none;
-}
-
-ul li::marker{
-    content: '- ';
 }
 
 @media (max-width: 990px){
